@@ -1,0 +1,18 @@
+services:
+  website:
+    image: brunoir/www.ignaz.dev:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: nginx
+    restart: unless-stopped
+    volumes:
+      - ./dist:/www:ro # enables automatic reloads for development
+    networks:
+      - proxynet
+    ports:
+      - 80:80
+
+networks:
+  proxynet:
+    #external: true

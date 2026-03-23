@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Resources</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml"/>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface": "#f5f0e6",
+              "surface-container-lowest": "#ffffff",
+              "surface-container-low": "#f1eae0",
+              "surface-container": "#ece4d5",
+              "surface-container-high": "#e1d9cc",
+              "surface-container-highest": "#e8e1d5",
+              "surface-variant": "#e8e1d5",
+              "background": "#f5f0e6",
+              "on-surface": "#2c1e14",
+              "on-surface-variant": "#5d4037",
+              "on-background": "#2c1e14",
+              "primary": "#bc5d34",
+              "primary-dim": "#a0522d",
+              "primary-container": "#f8e2d6",
+              "secondary": "#7b5e4f",
+              "secondary-container": "#e6d5c3",
+              "tertiary": "#8e735b",
+              "tertiary-container": "#f2dec5",
+              "outline": "#9c8e84",
+              "outline-variant": "#d1c4b9",
+            },
+            fontFamily: {
+              "headline": ["Manrope"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+    <style type="text/tailwindcss">
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+  vertical-align: middle;
+}
+body {
+  font-family: 'Inter', sans-serif;
+}
+.editorial-shadow {
+  box-shadow: 0 20px 40px rgba(44, 30, 20, 0.05);
+}
+.dark .editorial-shadow {
+  box-shadow: none;
+}
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #e1d9cc;
+  border-radius: 10px;
+}
+.dark ::-webkit-scrollbar-thumb {
+  background: #404a50;
+}
+    </style>
+    <script>
+      if (localStorage.getItem('theme') === 'dark' || (!localStorage.getItem('theme') && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        document.documentElement.classList.add('dark');
+      }
+    </script>
+  </head>
+  <body class="bg-background dark:bg-[#181c1f] text-on-surface dark:text-[#e3e6e8] antialiased overflow-x-hidden">
+    <div class="fixed top-8 right-8 z-[60]">
+      <button id="theme-toggle" class="material-symbols-outlined bg-surface-container-low dark:bg-[#242a2e] hover:bg-surface-container-high dark:hover:bg-[#2d3439] p-3 rounded-full transition-all duration-300 editorial-shadow border border-outline-variant/10 dark:border-[#404a50]/10 text-on-surface-variant dark:text-[#858f95]">dark_mode</button>
+    </div>
+    <main class="flex-1 p-4 sm:p-8 md:p-12 lg:p-20 overflow-hidden">
+      <div class="max-w-6xl mx-auto flex flex-col lg:flex-row lg:items-end justify-between gap-8 lg:gap-12 mb-12 lg:mb-20">
+        <div class="max-w-xl">
+          <div class="mb-4">
+            <span class="text-xs font-bold uppercase tracking-[0.2em] text-primary dark:text-[#7eb8da]">Resources</span>
+          </div>
+          <h1 class="text-4xl sm:text-5xl md:text-6xl font-headline font-bold tracking-tighter text-on-surface dark:text-[#e3e6e8] leading-tight">
+            Bruno<br/> <span class="text-primary-dim dark:text-[#6a9fc0]">Rothschild.</span>
+          </h1>
+          <p class="mt-4 sm:mt-6 text-base sm:text-lg text-on-surface-variant dark:text-[#a8b0b6] font-body leading-relaxed">
+          Personal projects, my config files and some events I participated at. 
+          </p>
+        </div>
+        <div class="w-full lg:w-auto flex flex-col gap-4 sm:gap-6 items-start lg:items-end">
+          <div class="flex items-center gap-4 sm:gap-8 border-b border-outline-variant/30 dark:border-[#404a50]/30 pb-2 w-full max-w-md">
+            <span class="material-symbols-outlined text-outline dark:text-[#858f95]">search</span>
+            <input id="search-input" class="bg-transparent border-none focus:ring-0 w-full text-on-surface dark:text-[#e3e6e8] placeholder:text-outline/50 dark:placeholder:text-[#858f95]/50 font-body text-sm" placeholder="Search..." type="text"/>
+          </div>
+          <div class="w-full sm:w-auto overflow-x-auto snap-x snap-mandatory [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+            <div class="flex items-center gap-2 p-1 bg-surface-container-low dark:bg-[#242a2e] rounded-lg w-max sm:w-auto">
+              <button class="filter-btn shrink-0 px-3 sm:px-6 py-2 text-xs font-bold uppercase tracking-widest bg-surface-container-lowest dark:bg-[#1d2226] text-on-surface dark:text-[#e3e6e8] shadow-sm rounded-md transition-all snap-center" data-filter="all">All</button>
+              <button class="filter-btn shrink-0 px-3 sm:px-6 py-2 text-xs font-bold uppercase tracking-widest text-outline dark:text-[#858f95] hover:text-on-surface dark:hover:text-[#e3e6e8] transition-all snap-center" data-filter="files">Files</button>
+              <button class="filter-btn shrink-0 px-3 sm:px-6 py-2 text-xs font-bold uppercase tracking-widest text-outline dark:text-[#858f95] hover:text-on-surface dark:hover:text-[#e3e6e8] transition-all snap-center" data-filter="projects">Projects</button>
+              <button class="filter-btn shrink-0 px-3 sm:px-6 py-2 text-xs font-bold uppercase tracking-widest text-outline dark:text-[#858f95] hover:text-on-surface dark:hover:text-[#e3e6e8] transition-all snap-center" data-filter="events">Events</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <include src="/components/entries.comp.html"></include>
+      <div class="h-40"></div>
+    </main>
+    <script>
+      // Theme toggle
+      document.getElementById('theme-toggle').addEventListener('click', () => {
+        document.documentElement.classList.toggle('dark');
+        localStorage.setItem('theme', document.documentElement.classList.contains('dark') ? 'dark' : 'light');
+        document.getElementById('theme-toggle').textContent = document.documentElement.classList.contains('dark') ? 'light_mode' : 'dark_mode';
+      });
+
+      if (document.documentElement.classList.contains('dark')) {
+        document.getElementById('theme-toggle').textContent = 'light_mode';
+      }
+
+      // Filter functionality
+      const searchInput = document.getElementById('search-input');
+      const entries = document.querySelectorAll('.entry');
+      const filterBtns = document.querySelectorAll('.filter-btn');
+
+      function applyFilter(filter) {
+        entries.forEach(entry => {
+          const matchesFilter = filter === 'all' || entry.dataset.type === filter;
+          const matchesSearch = !searchInput.value || entry.dataset.title.toLowerCase().includes(searchInput.value.toLowerCase());
+          entry.style.display = matchesFilter && matchesSearch ? '' : 'none';
+        });
+      }
+
+      function setActiveFilter(filter) {
+        filterBtns.forEach(b => {
+          b.classList.remove('bg-surface-container-lowest', 'dark:bg-[#1d2226]', 'text-on-surface', 'dark:text-[#e3e6e8]', 'shadow-sm');
+          b.classList.add('text-outline', 'dark:text-[#858f95]');
+        });
+        const activeBtn = document.querySelector(`[data-filter="${filter}"]`);
+        if (activeBtn) {
+          activeBtn.classList.add('bg-surface-container-lowest', 'dark:bg-[#1d2226]', 'text-on-surface', 'dark:text-[#e3e6e8]', 'shadow-sm');
+          activeBtn.classList.remove('text-outline', 'dark:text-[#858f95]');
+        }
+        localStorage.setItem('filter', filter);
+      }
+
+      searchInput.addEventListener('input', () => {
+        const filter = localStorage.getItem('filter') || 'all';
+        applyFilter(filter);
+      });
+
+      filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          const filter = btn.dataset.filter;
+          setActiveFilter(filter);
+          applyFilter(filter);
+        });
+      });
+
+      // Restore filter on load
+      const savedFilter = localStorage.getItem('filter') || 'all';
+      setActiveFilter(savedFilter);
+      applyFilter(savedFilter);
+    </script>
+  </body></html>
