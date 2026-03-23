@@ -102,7 +102,7 @@ body {
           </div>
           <div class="w-full sm:w-auto overflow-x-auto snap-x snap-mandatory [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
             <div class="flex items-center gap-2 p-1 bg-surface-container-low dark:bg-[#242a2e] rounded-lg w-max sm:w-auto">
-              <button class="filter-btn shrink-0 px-3 sm:px-6 py-2 text-xs font-bold uppercase tracking-widest bg-surface-container-lowest dark:bg-[#1d2226] text-on-surface dark:text-[#e3e6e8] shadow-sm rounded-md transition-all snap-center" data-filter="all">All</button>
+              <button class="filter-btn shrink-0 px-3 sm:px-6 py-2 text-xs font-bold uppercase tracking-widest bg-surface-container-lowest dark:bg-[#242a2e] text-on-surface dark:text-[#e3e6e8] shadow-sm rounded-md transition-all snap-center" data-filter="all">All</button>
               <button class="filter-btn shrink-0 px-3 sm:px-6 py-2 text-xs font-bold uppercase tracking-widest text-outline dark:text-[#858f95] hover:text-on-surface dark:hover:text-[#e3e6e8] transition-all snap-center" data-filter="files">Files</button>
               <button class="filter-btn shrink-0 px-3 sm:px-6 py-2 text-xs font-bold uppercase tracking-widest text-outline dark:text-[#858f95] hover:text-on-surface dark:hover:text-[#e3e6e8] transition-all snap-center" data-filter="projects">Projects</button>
               <button class="filter-btn shrink-0 px-3 sm:px-6 py-2 text-xs font-bold uppercase tracking-widest text-outline dark:text-[#858f95] hover:text-on-surface dark:hover:text-[#e3e6e8] transition-all snap-center" data-filter="events">Events</button>
@@ -140,12 +140,12 @@ body {
 
       function setActiveFilter(filter) {
         filterBtns.forEach(b => {
-          b.classList.remove('bg-surface-container-lowest', 'dark:bg-[#1d2226]', 'text-on-surface', 'dark:text-[#e3e6e8]', 'shadow-sm');
+          b.classList.remove('bg-surface-container-lowest', 'dark:bg-[#242a2e]', 'text-on-surface', 'dark:text-[#e3e6e8]', 'shadow-sm');
           b.classList.add('text-outline', 'dark:text-[#858f95]');
         });
         const activeBtn = document.querySelector(`[data-filter="${filter}"]`);
         if (activeBtn) {
-          activeBtn.classList.add('bg-surface-container-lowest', 'dark:bg-[#1d2226]', 'text-on-surface', 'dark:text-[#e3e6e8]', 'shadow-sm');
+          activeBtn.classList.add('bg-surface-container-lowest', 'dark:bg-[#242a2e]', 'text-on-surface', 'dark:text-[#e3e6e8]', 'shadow-sm');
           activeBtn.classList.remove('text-outline', 'dark:text-[#858f95]');
         }
         localStorage.setItem('filter', filter);
