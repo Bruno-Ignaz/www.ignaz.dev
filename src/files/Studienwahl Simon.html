@@ -1,531 +1,830 @@
 <!DOCTYPE html>
 <html lang="de">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Studien-Ratgeber für Simon</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <title>
+      Studien-Ratgeber für Simon
+    </title>
+    <script src="https://cdn.tailwindcss.com">
+    </script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: #f8fafc; /* slate-50 */
-            color: #1e293b; /* slate-800 */
-        }
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f8fafc; /* slate-50 */
+  color: #1e293b; /* slate-800 */
+}
         /* Smooth scrolling for anchor links if added later */
         html { scroll-behavior: smooth; }
-        
         /* Custom scrollbar for better aesthetics */
         ::-webkit-scrollbar { width: 8px; }
         ::-webkit-scrollbar-track { background: #f1f5f9; }
         ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 4px; }
         ::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
     </style>
-</head>
-<body class="antialiased">
-
+  </head>
+  <body class="antialiased break-words">
     <main class="max-w-4xl mx-auto px-4 py-12 md:px-8">
-      <h1 class="text-center text-5xl md:text-6xl font-bold text-slate-900 mb-1 pb-1">35 Zitate zur Studienwahl</h1>
-      <h3 class="text-center text-3xl md:text-4xl font-bold text-slate-900 mb-6 pb-3">
+      <h1 class="text-center text-4xl sm:text-5xl md:text-6xl font-bold text-slate-900 mb-1 pb-1">
+        35 Zitate zur Studienwahl
+      </h1>
+      <h3 class="text-center text-2xl sm:text-3xl md:text-4xl font-bold text-slate-900 mb-6 pb-3">
         Motiv, Bewältigung und Kriterien
       </h3>
-        
-        <!-- Intro Section -->
-        <div class="bg-white rounded-2xl shadow-sm border border-slate-200 p-6 md:p-10 mb-12">
-            <div class="space-y-4 text-slate-700 leading-relaxed text-lg">
-                <p>Es gibt viele Gründe zum Studieren. Sind dir deine Gründe wirklich klar? Kenntniss über mögliche Gründe bringt Dir sicher Klarheit.</p>
-                <p>Lernstrategien, Tipps und bewusste Gewohnheiten machen die Bewältigung des Studiums leichter, wenn einem diese nicht völlig unbekannt sind.</p>
-                <p>Nach welchen Kriterien sollte man den Studiengang wählen? Eine übersicht an möglichen Kriterien macht die Suche nach passenden Kriterien sicher leichter.</p>
-                <p>Wieso sammelst du nicht alles gute auf einer übersichtlichen Mindmap?</p>
-                <p class="font-medium text-blue-600 pt-2">Hoffentlich hilft Dir dieses Dokument weiter. :)</p>
-            </div>
+      <div class="bg-white rounded-2xl shadow-sm border border-slate-200 p-6 md:p-10 mb-12">
+        <div class="space-y-4 text-slate-700 leading-relaxed text-lg">
+          <p>
+          Es gibt viele Gründe zum Studieren. Sind dir deine Gründe wirklich klar? Kenntniss über mögliche Gründe bringt Dir sicher Klarheit.
+          </p>
+          <p>
+          Lernstrategien, Tipps und bewusste Gewohnheiten machen die Bewältigung des Studiums leichter, wenn einem diese nicht völlig unbekannt sind.
+          </p>
+          <p>
+          Nach welchen Kriterien sollte man den Studiengang wählen? Eine übersicht an möglichen Kriterien macht die Suche nach passenden Kriterien sicher leichter.
+          </p>
+          <p>
+          Wieso sammelst du nicht alles gute auf einer übersichtlichen Mindmap?
+          </p>
+          <p class="font-medium text-blue-600 pt-2">
+          Hoffentlich hilft Dir dieses Dokument weiter. :)
+          </p>
         </div>
-
-        <nav id="inhaltsverzeichnis" class="bg-white rounded-xl shadow-sm border border-slate-200 p-6 md:px-10 mb-12">
-            <h2 class="text-xl font-bold text-slate-900 mb-4">Inhaltsverzeichnis</h2>
-            <ul class="space-y-3 text-slate-700">
-                <li>
-                    <a href="#warum-studieren" class="text-blue-600 hover:text-blue-800 hover:underline flex items-baseline">
-                        <span class="mr-2 font-semibold text-slate-500">1.</span> Gründe fürs Studium?
-                    </a>
-                </li>
-                <li>
-                    <a href="#studium-bewaeltigen" class="text-blue-600 hover:text-blue-800 hover:underline flex items-baseline">
-                        <span class="mr-2 font-semibold text-slate-500">2.</span> Wie kann man das Studium bewältigen?
-                    </a>
-                </li>
-                <li>
-                    <a href="#studiengang-waehlen" class="text-blue-600 hover:text-blue-800 hover:underline flex items-baseline">
-                        <span class="mr-2 font-semibold text-slate-500">3.</span> Wie wählt man den Studiengang?
-                    </a>
-                </li>
-                <li>
-                    <a href="#weitere-infos" class="text-blue-600 hover:text-blue-800 hover:underline flex items-baseline">
-                        <span class="mr-2 font-semibold text-slate-500">4.</span> Fachbereiche, Wohnen & Sonstiges
-                    </a>
-                </li>
-            </ul>
-        </nav>
-
-        <!-- SECTION 1 -->
-        <section id="warum-studieren" class="mb-16">
-            <div class="flex flex-col md:flex-row md:items-baseline justify-between mb-8 pb-4 border-b-2 border-slate-200 gap-2">
-                <h1 class="text-3xl md:text-4xl font-bold text-slate-900">
-                    Gründe fürs Studium?
-                </h1>
-                <a href="#inhaltsverzeichnis" class="text-sm font-medium text-slate-500 hover:text-blue-600 hover:underline shrink-0 transition-colors">
-                    &uarr; Zum Inhaltsverzeichnis
-                </a>
+      </div>
+      <nav id="inhaltsverzeichnis" class="bg-white rounded-xl shadow-sm border border-slate-200 p-6 md:px-10 mb-12">
+        <h2 class="text-xl font-bold text-slate-900 mb-4">
+          Inhaltsverzeichnis
+        </h2>
+        <ul class="space-y-3 text-slate-700">
+          <li>
+            <a href="#warum-studieren" class="text-blue-600 hover:text-blue-800 hover:underline flex items-baseline">
+              <span class="mr-2 font-semibold text-slate-500">
+                1.
+              </span>
+              Gründe fürs Studium?
+            </a>
+          </li>
+          <li>
+            <a href="#studium-bewaeltigen" class="text-blue-600 hover:text-blue-800 hover:underline flex items-baseline">
+              <span class="mr-2 font-semibold text-slate-500">
+                2.
+              </span>
+              Wie kann man das Studium bewältigen?
+            </a>
+          </li>
+          <li>
+            <a href="#studiengang-waehlen" class="text-blue-600 hover:text-blue-800 hover:underline flex items-baseline">
+              <span class="mr-2 font-semibold text-slate-500">
+                3.
+              </span>
+              Wie wählt man den Studiengang?
+            </a>
+          </li>
+          <li>
+            <a href="#weitere-infos" class="text-blue-600 hover:text-blue-800 hover:underline flex items-baseline">
+              <span class="mr-2 font-semibold text-slate-500">
+                4.
+              </span>
+              Fachbereiche, Wohnen & Sonstiges
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <section id="warum-studieren" class="mb-16">
+        <div class="flex flex-col md:flex-row md:items-baseline justify-between mb-8 pb-4 border-b-2 border-slate-200 gap-2">
+          <h1 class="text-3xl md:text-4xl font-bold text-slate-900">
+            Gründe fürs Studium?
+          </h1>
+          <a href="#inhaltsverzeichnis" class="text-sm font-medium text-slate-500 hover:text-blue-600 hover:underline shrink-0 transition-colors">
+            &uarr; Zum Inhaltsverzeichnis
+          </a>
+        </div>
+        <div class="mb-10">
+          <h2 class="text-2xl font-semibold text-slate-800 mb-6 flex flex-wrap items-center gap-y-2">
+            <span class="bg-blue-100 text-blue-700 px-3 py-1 rounded-md text-sm font-bold mr-3">
+              Forum
+            </span>
+            Meinungen aus 
+            <a href="https://www.reddit.com/r/GetStudying/comments/mzlvei/deleted_by_user/" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline ml-2">
+              r/getStudying
+            </a>
+          </h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div class="bg-white p-5 rounded-xl shadow-sm border border-slate-200">
+              <div class="text-sm font-bold text-slate-500 mb-2">
+                Ishkung
+              </div>
+              <div class="text-slate-800">
+                To get the chance to live the life i want (e.g. happy family, be financially free)
+              </div>
             </div>
-
-            <!-- r/getStudying -->
-            <div class="mb-10">
-                <h2 class="text-2xl font-semibold text-slate-800 mb-6 flex items-center">
-                    <span class="bg-blue-100 text-blue-700 px-3 py-1 rounded-md text-sm font-bold mr-3">Forum</span>
-                    Meinungen aus <a href="https://www.reddit.com/r/GetStudying/comments/mzlvei/deleted_by_user/" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline ml-2">r/getStudying</a>
-                </h2>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <div class="bg-white p-5 rounded-xl shadow-sm border border-slate-200">
-                        <div class="text-sm font-bold text-slate-500 mb-2">Ishkung</div>
-                        <div class="text-slate-800">To get the chance to live the life i want (e.g. happy family, be financially free)</div>
-                    </div>
-                    <div class="bg-white p-5 rounded-xl shadow-sm border border-slate-200">
-                        <div class="text-sm font-bold text-slate-500 mb-2">WHTschohl</div>
-                        <div class="text-slate-800">I study to learn about the world and how to create whatever i can imagine. It’s fun, like starting the advanced tutorial in a game to get better and fight the boss with more ease, but the time limits create a lot of stress on things that should be fun (quit rant)</div>
-                    </div>
-                    <div class="bg-white p-5 rounded-xl shadow-sm border border-slate-200">
-                        <div class="text-sm font-bold text-slate-500 mb-2">deleted</div>
-                        <div class="text-slate-800">I want to get my deegre so I can get a job and treat hereditary problems in the DNA.</div>
-                    </div>
-                    <div class="bg-white p-5 rounded-xl shadow-sm border border-slate-200">
-                        <div class="text-sm font-bold text-slate-500 mb-2">Eastern_Bumblebee708</div>
-                        <div class="text-slate-800">To get out of my country and have a better life.</div>
-                    </div>
-                    <div class="bg-white p-5 rounded-xl shadow-sm border border-slate-200">
-                        <div class="text-sm font-bold text-slate-500 mb-2">Pufferfoot</div>
-                        <div class="text-slate-800">The immense fear of having to return to my previous job.</div>
-                    </div>
-                    <div class="bg-white p-5 rounded-xl shadow-sm border border-slate-200">
-                        <div class="text-sm font-bold text-slate-500 mb-2">Abeemonkk</div>
-                        <div class="text-slate-800">To become the best version of my self. There’s no evidence of afterlife, so if this is all that exists I want to learn about everything that surrounds me while I’m here existing</div>
-                    </div>
-                    <div class="bg-white p-5 rounded-xl shadow-sm border border-slate-200">
-                        <div class="text-sm font-bold text-slate-500 mb-2">lenzuolino</div>
-                        <div class="text-slate-800">to understand what reality is</div>
-                    </div>
-                    <div class="bg-white p-5 rounded-xl shadow-sm border border-slate-200">
-                        <div class="text-sm font-bold text-slate-500 mb-2">nerdhappyjq</div>
-                        <div class="text-slate-800">One day I just decided to become an academic. And studying is what we do.</div>
-                    </div>
-                    <div class="bg-white p-5 rounded-xl shadow-sm border border-slate-200">
-                        <div class="text-sm font-bold text-slate-500 mb-2">RedAsh521</div>
-                        <div class="text-slate-800">Growing up in the bad side of Brooklyn taught me to be grateful of what I have. When my parents gained enough money to move to Long Island and send me to a good school I won’t let their money go to waste.</div>
-                    </div>
-                    <div class="bg-white p-5 rounded-xl shadow-sm border border-slate-200">
-                        <div class="text-sm font-bold text-slate-500 mb-2">lambikins24</div>
-                        <div class="text-slate-800">To prove to myself that I can accomplish my goals</div>
-                    </div>
-                    <div class="bg-white p-5 rounded-xl shadow-sm border border-slate-200">
-                        <div class="text-sm font-bold text-slate-500 mb-2">deleted</div>
-                        <div class="text-slate-800">Independence. Taking care of people, animals I love.</div>
-                    </div>
-                </div>
+            <div class="bg-white p-5 rounded-xl shadow-sm border border-slate-200">
+              <div class="text-sm font-bold text-slate-500 mb-2">
+                WHTschohl
+              </div>
+              <div class="text-slate-800">
+                I study to learn about the world and how to create whatever i can imagine. It’s fun, like starting the advanced tutorial in a game to get better and fight the boss with more ease, but the time limits create a lot of stress on things that should be fun (quit rant)
+              </div>
             </div>
-
-            <!-- r/study -->
-            <div class="mb-10">
-                <h2 class="text-2xl font-semibold text-slate-800 mb-6 flex items-center">
-                    <span class="bg-blue-100 text-blue-700 px-3 py-1 rounded-md text-sm font-bold mr-3">Forum</span>
-                    Meinungen aus <a href="https://www.reddit.com/r/study/comments/qd9hqp/why_study/" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline ml-2">r/study</a>
-                </h2>
-                <div class="space-y-4">
-                    <div class="bg-white p-5 rounded-xl shadow-sm border border-slate-200">
-                        <div class="text-sm font-bold text-slate-500 mb-2">gragagaga</div>
-                        <div class="text-slate-800 space-y-3">
-                            <p>I have graduated many years already. I hated study while I was at school. But now I always miss the days when I was a student. [...] Having a degree doesn’t guarantee a deserving job. But without a degree, the chances to getting a lot of jobs are zero. [...] You may not like what you are studying. But studying actually helps to train your comprehension skills, problem-solving skills, analytical skills, research skills, communication skills. These skills are so important in any aspects of your life.</p>
-                        </div>
-                    </div>
-                    <div class="bg-white p-5 rounded-xl shadow-sm border border-slate-200">
-                        <div class="text-sm font-bold text-slate-500 mb-2">ultra_nick</div>
-                        <div class="text-slate-800">if you actually want to use some knowledge in the future, then studying will help. Memorizing facts alone isn't studying. Facts are useless unless you understand how they connect to the world. Having knowledge of the world in your head enables you to use your knowledge to recognize opportunities or threats that you'd miss if you can only look stuff up.</div>
-                    </div>
-                </div>
+            <div class="bg-white p-5 rounded-xl shadow-sm border border-slate-200">
+              <div class="text-sm font-bold text-slate-500 mb-2">
+                deleted
+              </div>
+              <div class="text-slate-800">
+                I want to get my deegre so I can get a job and treat hereditary problems in the DNA.
+              </div>
             </div>
-
-            <!-- r/AskOldPeople -->
-            <div class="mb-10">
-                <h2 class="text-2xl font-semibold text-slate-800 mb-6 flex items-center">
-                    <span class="bg-blue-100 text-blue-700 px-3 py-1 rounded-md text-sm font-bold mr-3">Forum</span>
-                    Meinungen aus <a href="https://www.reddit.com/r/AskOldPeople/comments/11f7iia/is_it_really_important_to_study_a_lot_why/" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline ml-2">r/AskOldPeople</a>
-                </h2>
-                <div class="space-y-4">
-                    <div class="bg-white p-5 rounded-xl shadow-sm border border-slate-200">
-                        <div class="text-sm font-bold text-slate-500 mb-2">Mentalfloss1</div>
-                        <div class="text-slate-800">It’s important to learn how to learn. To learn how you learn, how YOU are best able to learn.</div>
-                    </div>
-                    <div class="bg-white p-5 rounded-xl shadow-sm border border-slate-200">
-                        <div class="text-sm font-bold text-slate-500 mb-2">who-hash</div>
-                        <div class="text-slate-800">I feel like the people around me (whether younger or older) that have stagnated in life are the ones that have remained closed to new ideas and stopped learning.</div>
-                    </div>
-                    <div class="bg-white p-5 rounded-xl shadow-sm border border-slate-200">
-                        <div class="text-sm font-bold text-slate-500 mb-2">Arkelas</div>
-                        <div class="text-slate-800">I believe you should never stop learning, but there's no reason that learning needs to happen in a university. If university is the best path for your career, great!</div>
-                    </div>
-                    <div class="bg-white p-5 rounded-xl shadow-sm border border-slate-200">
-                        <div class="text-sm font-bold text-slate-500 mb-2">catdude142</div>
-                        <div class="text-slate-800">I really didn't "study" until I reached college. Then I was there because I wanted to be there and I did well.</div>
-                    </div>
-                    <div class="bg-white p-5 rounded-xl shadow-sm border border-slate-200">
-                        <div class="text-sm font-bold text-slate-500 mb-2">Mark12547</div>
-                        <div class="text-slate-800 space-y-3">
-                            <p>Having achieved a certain level of education or a certain credential shows the employer that you are willing to stick with and complete a long-term task, even when that task can involve drudgery.</p>
-                            <p>As mentioned by someone else, a valuable skill is knowing how to find information, particularly technical information relevant to the job or a particular situation one may need to research. Also, many jobs require some sort of continuing education</p>
-                            <p>Education increases the options. While it won't guarantee the dream job, it can increase the chance of qualifying for a career that you end up enjoying and doing for the long term.</p>
-                        </div>
-                    </div>
-                    <div class="bg-white p-5 rounded-xl shadow-sm border border-slate-200">
-                        <div class="text-sm font-bold text-slate-500 mb-2">Gytramr65</div>
-                        <div class="text-slate-800">My take - studying “a lot” may or may not be effective. One of the things I’ve learned, more often than not, painfully, is that there are various different ways people learn. And often, the educational systems, and/or individual instructors, tend to fashion teaching to the (perceived) majority.</div>
-                    </div>
-                </div>
+            <div class="bg-white p-5 rounded-xl shadow-sm border border-slate-200">
+              <div class="text-sm font-bold text-slate-500 mb-2">
+                Eastern_Bumblebee708
+              </div>
+              <div class="text-slate-800">
+                To get out of my country and have a better life.
+              </div>
             </div>
-        </section>
-
-        <!-- SECTION 2 -->
-        <section id="studium-bewaeltigen" class="mb-16">
-            <div class="flex flex-col md:flex-row md:items-baseline justify-between mb-6 pb-4 border-b-2 border-slate-200 gap-2">
-                <h1 class="text-3xl md:text-4xl font-bold text-slate-900">
-                    Wie kann man das Studium bewältigen? (Meinungen)
-                </h1>
-                <a href="#inhaltsverzeichnis" class="text-sm font-medium text-slate-500 hover:text-blue-600 hover:underline shrink-0 transition-colors">
-                    &uarr; Zum Inhaltsverzeichnis
-                </a>
+            <div class="bg-white p-5 rounded-xl shadow-sm border border-slate-200">
+              <div class="text-sm font-bold text-slate-500 mb-2">
+                Pufferfoot
+              </div>
+              <div class="text-slate-800">
+                The immense fear of having to return to my previous job.
+              </div>
             </div>
-            
-            <p class="text-slate-700 leading-relaxed mb-2 text-lg">
-                Gerade im ersten Semester kann die Menge an Informationen überwältigend sein.
-                Aber gerade weil ich mich diesen Massen ausgeliefert habe, habe ich gelernt diese zu Filtern.
-                Wurde die Menge an Informationen zu groß, dann habe ich alle Informationen auf einer Mindmap organisiert und in Beziehung gesetzt.
-                Unterstützt hat mich meine Motivation.
-                Bei herausfordernden Themen frage ich mich:
-                Welcher Grund hält mich ab, diese Thema einfach zu ignorieren?
-                Und mir ist noch nie kein Grund eingefallen.
-            </p>
-            <p class="text-slate-700 leading-relaxed mb-2 text-lg">
-                War das schon immer Dein Ding, bei der kleinsten Schwierigkeit sofort aufzugeben, oder hat dich etwas verändert?
-                Ein gutes Ziel ist schwer zu erreichen.
-                Ob es erreicht wurde, sollte auch leicht überprüfbar sein.
-                Welche Dinge sind für Dich notwendig, um ein langfristiges Ziel in deinen Alltag zu integrieren?
-                Du scheinst mir nicht die Person zu sein, welche nie ein langfristiges Ziel verfolgen könnte.
-            </p>
-            <p class="text-slate-700 leading-relaxed mb-8 text-lg">
-                Mit Gedankenketten können <i>Beziehungen</i> präzise ausgedrückt werden.
-                Reflektieren kommt aus dem Lateinischen und bedeutet soviel wie: aktives Suchen nach Fehlern in der Gedankenkette.
-                Je mehr Fehler jemand finden kann, desto mehr Fehler wird diese Person finden, desto besser kann diese Person Fehler finden, dass schließt den Feedbackloop.
-                Bessere analytische Fähigkeiten machen es nicht schwerer, sondern leichter diese und andere Fähigkeit zu verbessern.
-                Deswegen sind analytische Fähigkeiten wichtig, um Fehler in Gedankenketten von einem selber und aber auch von anderen erkennen zu können.
-                Somit sind analytische Fähigkeiten auch für das kreieren von eigenen Gedankenketten nicht wegdenkbar, z.B. ChatGPT, YouTube Essays, Debatten, Verhandlungen oder Diskusionen.
-                Das kommt Dir alles sicher bekannt vor, denn Dir war das sicher schon seit einiger Zeit klar.
-            </p>
-
-            <!-- YouTube Videos -->
-            <div class="mb-10">
-                <h2 class="text-2xl font-semibold text-slate-800 mb-6 flex items-center">
-                    <span class="bg-red-100 text-red-700 px-3 py-1 rounded-md text-sm font-bold mr-3">Video</span>
-                    YouTube Videos
-                </h2>
-                
-                <div class="space-y-6">
-                    <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200">
-                        <a href="https://www.youtube.com/watch?v=kuSr6yTMuC8" target="_blank" class="text-lg font-bold text-blue-600 hover:text-blue-800 hover:underline block mb-4">3 Steps to Memorize Everything. FAST.</a>
-                        <div class="text-slate-800 space-y-3">
-                            <p>The brain is not built for modern education. It is built for survival.</p>
-                            <p class="text-sm text-slate-500 italic">(Bei interesse empfehle ich das Poster über die 5. unterschiedlichen Denkarten von uns Menschen.)</p>
-                        </div>
-                    </div>
-
-                    <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200">
-                        <a href="https://youtu.be/fXyRprdoEoE?si=XHnLeMlMgYjU1SBQ&t=65" target="_blank" class="text-lg font-bold text-blue-600 hover:text-blue-800 hover:underline block mb-4">How to Build Systems to Actually Achieve Your Goals</a>
-                        <div class="text-slate-800">
-                            The point of thinking in systems is you reduce your reliance on thinking terms of willpower and motivation.
-                        </div>
-                    </div>
-                </div>
+            <div class="bg-white p-5 rounded-xl shadow-sm border border-slate-200">
+              <div class="text-sm font-bold text-slate-500 mb-2">
+                Abeemonkk
+              </div>
+              <div class="text-slate-800">
+                To become the best version of my self. There’s no evidence of afterlife, so if this is all that exists I want to learn about everything that surrounds me while I’m here existing
+              </div>
             </div>
-
-            <!-- r/college -->
-            <div class="mb-10">
-                <h2 class="text-2xl font-semibold text-slate-800 mb-6 flex items-center">
-                    <span class="bg-blue-100 text-blue-700 px-3 py-1 rounded-md text-sm font-bold mr-3">Forum</span>
-                    Meinungen aus <a href="https://www.reddit.com/r/college/comments/15ftqee/what_is_the_secret_to_doing_well_in_college_both/" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline ml-2">r/college</a>
-                </h2>
-                <div class="space-y-4">
-                    <div class="bg-white p-5 rounded-xl shadow-sm border border-slate-200">
-                        <div class="text-sm font-bold text-slate-500 mb-2">StickerPK</div>
-                        <div class="text-slate-800">As for social life, the first few weeks/first month will be the most important time. Everyone is a clean slate and no one knows each other. Talk to and meet as many people as you can.</div>
-                    </div>
-                    <div class="bg-white p-5 rounded-xl shadow-sm border border-slate-200">
-                        <div class="text-sm font-bold text-slate-500 mb-2">TokoBlaster</div>
-                        <div class="text-slate-800 space-y-3">
-                            <p>Staying up all night doesn't work. Get 8 hours of sleep.</p>
-                            <p>Don't re-read your notes: re-write your notes. Use flashcards for important concepts you need to memorize, but also try to memorize as little as possible. I'm in STEM so instead of memorize every single formula I just learn the concepts and then learn how to derive the formula I need. When I did more GE things I still didn't memorize specifics but concepts, so if I had to do something like argue in Philosophy I was arguing with the concepts not with some specific quote in a book. It was easier to find the quote if I knew what they were arguing.</p>
-                            <p>Use the resources you have at school. Go to your professors office hours, but go with a question or two. They don't have to be good, but make sure you have something specific to ask. That way it opens up conversation about the material you can pick up. Go to the library, but don't just go to the library and sit there and do homework: check out books from the library. Find other textbooks on the material you're learning and read those. Sometimes the answers to your questions are in other books.</p>
-                            <p>Get into study groups: this will help you socially and make friends, but also studying with people helps you learn the material by either teaching it to others or hearing their perceptive on the material.</p>
-                            <p>And finally: try to enjoy the material you're learning. Enjoying it makes it easier to learn, while if you're like "Oh god... I have to take a physics class" means you're going to hate the material and refuse to learn it, but if you at least try to enjoy it, or find something you enjoy about it, it will make it easier to study.</p>
-                        </div>
-                    </div>
-                    <div class="bg-white p-5 rounded-xl shadow-sm border border-slate-200">
-                        <div class="text-sm font-bold text-slate-500 mb-2">Primary_Excuse_7183</div>
-                        <div class="text-slate-800">If the only place you’re learning is in the classroom you’re likely doing college wrong.</div>
-                    </div>
-                    <div class="bg-white p-5 rounded-xl shadow-sm border border-slate-200">
-                        <div class="text-sm font-bold text-slate-500 mb-2">Creepy-Tangerine-293</div>
-                        <div class="text-slate-800 space-y-3">
-                            <p>Read. The. Syllabus. And don't email prof ever if you haven't checked to make sure your answer isn't in the syllabus already. They can get very frosty if you appear that you aren't truly engaged in the info you've already been given.</p>
-                            <p>Make use of prof office hours early in the term. They are one of the most underutilized resources on any campus.</p>
-                        </div>
-                    </div>
-                    <div class="bg-white p-5 rounded-xl shadow-sm border border-slate-200">
-                        <div class="text-sm font-bold text-slate-500 mb-2">deleted</div>
-                        <div class="text-slate-800">Make an excel sheet to keep track of all assignments.</div>
-                    </div>
-                    <div class="bg-white p-5 rounded-xl shadow-sm border border-slate-200">
-                        <div class="text-sm font-bold text-slate-500 mb-2">mattynmax</div>
-                        <div class="text-slate-800 space-y-3">
-                            <p>It’s an extremely difficult and complex task but I’ll explain it as simply as I can</p>
-                            <p>Manage your time.</p>
-                        </div>
-                    </div>
-                </div>
+            <div class="bg-white p-5 rounded-xl shadow-sm border border-slate-200">
+              <div class="text-sm font-bold text-slate-500 mb-2">
+                lenzuolino
+              </div>
+              <div class="text-slate-800">
+                to understand what reality is
+              </div>
             </div>
-
-            <!-- Communities -->
-            <div class="mb-10 bg-indigo-50 p-6 rounded-xl border border-indigo-100">
-                <h2 class="text-xl font-semibold text-indigo-900 mb-4 flex items-center">
-                    Communities
-                </h2>
-                <ul class="space-y-3 text-slate-700">
-                    <li class="flex items-center">
-                        <span class="w-2 h-2 bg-indigo-400 rounded-full mr-3"></span>
-                        Uni- oder Studiengang-Foren (z.B. Discord, Reddit)
-                    </li>
-                </ul>
+            <div class="bg-white p-5 rounded-xl shadow-sm border border-slate-200">
+              <div class="text-sm font-bold text-slate-500 mb-2">
+                nerdhappyjq
+              </div>
+              <div class="text-slate-800">
+                One day I just decided to become an academic. And studying is what we do.
+              </div>
             </div>
-        </section>
-
-        <!-- SECTION 3 -->
-        <section id="studiengang-waehlen" class="mb-16">
-            <div class="flex flex-col md:flex-row md:items-baseline justify-between mb-8 pb-4 border-b-2 border-slate-200 gap-2">
-                <h1 class="text-3xl md:text-4xl font-bold text-slate-900">
-                    Wie wählt man den Studiengang?
-                </h1>
-                <a href="#inhaltsverzeichnis" class="text-sm font-medium text-slate-500 hover:text-blue-600 hover:underline shrink-0 transition-colors">
-                    &uarr; Zum Inhaltsverzeichnis
-                </a>
+            <div class="bg-white p-5 rounded-xl shadow-sm border border-slate-200">
+              <div class="text-sm font-bold text-slate-500 mb-2">
+                RedAsh521
+              </div>
+              <div class="text-slate-800">
+                Growing up in the bad side of Brooklyn taught me to be grateful of what I have. When my parents gained enough money to move to Long Island and send me to a good school I won’t let their money go to waste.
+              </div>
             </div>
-
-            <!-- r/college -->
-            <div class="mb-10">
-                <h2 class="text-2xl font-semibold text-slate-800 mb-6 flex items-center">
-                    <span class="bg-blue-100 text-blue-700 px-3 py-1 rounded-md text-sm font-bold mr-3">Forum</span>
-                    Meinungen aus <a href="https://www.reddit.com/r/college/comments/1cdrzoh/how_did_you_decide_on_your_college_major_and/" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline ml-2">r/college</a>
-                </h2>
-                <div class="space-y-4">
-                    <div class="bg-white p-5 rounded-xl shadow-sm border border-slate-200">
-                        <div class="text-sm font-bold text-slate-500 mb-2">Wxpid</div>
-                        <div class="text-slate-800">Focus on taking a good step that gives you options in the future. You don't have to decide what to be for the rest of your life. [...] If you love it, get the bachelors degree. If you don't, switch. If you're tired of school, you picked an employable degree that guarantees you a living wage for minimal cost.</div>
-                    </div>
-                    <div class="bg-white p-5 rounded-xl shadow-sm border border-slate-200">
-                        <div class="text-sm font-bold text-slate-500 mb-2">Not-the-swedish-chef</div>
-                        <div class="text-slate-800">I changed my major three times. I eventually landed on accounting. This is going to sound shallow, but I honestly just want to have a job where I make good money, is stable, and so I can have a nice quality of life and fund my hobbies.</div>
-                    </div>
-                    <div class="bg-white p-5 rounded-xl shadow-sm border border-slate-200">
-                        <div class="text-sm font-bold text-slate-500 mb-2">TheLazerChamp</div>
-                        <div class="text-slate-800">I picked what I loved. I love math and love teaching things to others, so I will be a math teacher. Simple as that, sure I won’t hit it rich or anything but at the end of the day I only have 80-90 years on this planet, other people can spend it min maxing I’ll just enjoy it.</div>
-                    </div>
-                    <div class="bg-white p-5 rounded-xl shadow-sm border border-slate-200">
-                        <div class="text-sm font-bold text-slate-500 mb-2">BBack09</div>
-                        <div class="text-slate-800">I did not want to work in a cubicle and was drawn to a career I could use my problem solving skills with. I also get a kick out of seeing people do well.</div>
-                    </div>
-                    <div class="bg-white p-5 rounded-xl shadow-sm border border-slate-200">
-                        <div class="text-sm font-bold text-slate-500 mb-2">Staticc_</div>
-                        <div class="text-slate-800">If you don’t know what you want to do yet, I’d suggest getting core credits from a community college while you’re figuring it out. [...] A lot of majors have requirements that coincide with each other (ex swapped from computer science to math, requires many of the same math courses). [...] If you’re not interested in the material, it’ll make the classes that much worse. Maybe get some experience in fields you’d be interested in or talking to people in those fields. It’s a big choice, but not the end of the world if you change your mind.</div>
-                    </div>
-                </div>
+            <div class="bg-white p-5 rounded-xl shadow-sm border border-slate-200">
+              <div class="text-sm font-bold text-slate-500 mb-2">
+                lambikins24
+              </div>
+              <div class="text-slate-800">
+                To prove to myself that I can accomplish my goals
+              </div>
             </div>
-
-            <!-- r/education -->
-            <div class="mb-10">
-                <h2 class="text-2xl font-semibold text-slate-800 mb-6 flex items-center">
-                    <span class="bg-blue-100 text-blue-700 px-3 py-1 rounded-md text-sm font-bold mr-3">Forum</span>
-                    Meinungen aus <a href="https://www.reddit.com/r/education/comments/1is59vt/what_is_the_best_approach_to_choosing_a_college/" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline ml-2">r/education</a>
-                </h2>
-                <div class="space-y-4">
-                    <div class="bg-white p-5 rounded-xl shadow-sm border border-slate-200">
-                        <div class="text-sm font-bold text-slate-500 mb-2">stacy2545</div>
-                        <div class="text-slate-800">Idk if it was the "best" way, but I picked major by going through my uni's course catalog & circling every class I was interested in taking.</div>
-                    </div>
-                    <div class="bg-white p-5 rounded-xl shadow-sm border border-slate-200">
-                        <div class="text-sm font-bold text-slate-500 mb-2">katbeccabee</div>
-                        <div class="text-slate-800 space-y-3">
-                            <p>I chose a major 18 years ago, and I still see it as a bit of an impossible task. High school and college students haven’t had much opportunity to get a sense of what jobs are out there. College majors don’t necessarily correspond well to career opportunities. Your path is going to be influenced by relationships, geography, timing, and chance in ways that you just can’t predict now.</p>
-                            <p>At every opportunity, ask adults about what they do for work, how they got interested in it, and the sequence of steps that got them to where they are. Even if it’s something that doesn’t interest you at all, you’ll get an idea of how people’s career paths take shape. People meander more than you might think. You’ll also get ideas of opportunities that might be available within your particular environment.</p>
-                            <p>Notice which classes you like the best, but also think about why you like them. What kinds of tasks do you find interesting or tedious, easy or difficult?</p>
-                            <p>When all else fails, just pick something (for now). Stick with it long enough to get some depth of knowledge in the subject. See what opportunities it opens up for you, and if you see an opportunity to shift towards something you like better, take it.</p>
-                        </div>
-                    </div>
-                </div>
+            <div class="bg-white p-5 rounded-xl shadow-sm border border-slate-200">
+              <div class="text-sm font-bold text-slate-500 mb-2">
+                deleted
+              </div>
+              <div class="text-slate-800">
+                Independence. Taking care of people, animals I love.
+              </div>
             </div>
-
-            <!-- other -->
-            <div class="mb-10">
-                <h2 class="text-2xl font-semibold text-slate-800 mb-6 flex items-center">
-                    <span class="bg-blue-100 text-blue-700 px-3 py-1 rounded-md text-sm font-bold mr-3">Other</span>
-                    Weitere Meinungen
-                </h2>
-                <div class="space-y-4">
-                    <div class="bg-white p-5 rounded-xl shadow-sm border border-slate-200">
-                        <div class="text-sm font-bold text-slate-500 mb-2">bruno</div>
-                        <div class="text-slate-800">The ideal study subject is one you would like to apply and learn about on your own, and which offers the opportunities you want.</div>
-                    </div>
-                </div>
+          </div>
+        </div>
+        <div class="mb-10">
+          <h2 class="text-2xl font-semibold text-slate-800 mb-6 flex flex-wrap items-center gap-y-2">
+            <span class="bg-blue-100 text-blue-700 px-3 py-1 rounded-md text-sm font-bold mr-3">
+              Forum
+            </span>
+            Meinungen aus 
+            <a href="https://www.reddit.com/r/study/comments/qd9hqp/why_study/" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline ml-2">
+              r/study
+            </a>
+          </h2>
+          <div class="space-y-4">
+            <div class="bg-white p-5 rounded-xl shadow-sm border border-slate-200">
+              <div class="text-sm font-bold text-slate-500 mb-2">
+                gragagaga
+              </div>
+              <div class="text-slate-800 space-y-3">
+                <p>
+                I have graduated many years already. I hated study while I was at school. But now I always miss the days when I was a student. [...] Having a degree doesn’t guarantee a deserving job. But without a degree, the chances to getting a lot of jobs are zero. [...] You may not like what you are studying. But studying actually helps to train your comprehension skills, problem-solving skills, analytical skills, research skills, communication skills. These skills are so important in any aspects of your life.
+                </p>
+              </div>
             </div>
-
-            <!-- Links -->
-            <div class="mb-10 bg-slate-100 p-6 rounded-xl border border-slate-200">
-                <h2 class="text-xl font-semibold text-slate-800 mb-4 flex items-center">
-                    <span class="bg-emerald-100 text-emerald-700 px-3 py-1 rounded-md text-sm font-bold mr-3">Links</span>
-                    Hilfreiche Ressourcen
-                </h2>
-                <ul class="space-y-3 text-slate-700">
-                    <li class="flex items-center">
-                        <span class="w-2 h-2 bg-slate-400 rounded-full mr-3"></span>
-                        <a href="https://www.static.tu.berlin/fileadmin/www/_processed_/c/3/csm_SVP_BSC_ET_WS23_24_gross_29d5a49a97.png" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline">Beispiel Studienverlaufsplan</a> <span class="text-sm text-slate-500 ml-2">(Bild, hilfreich, via Google)</span>
-                    </li>
-                    <li class="flex items-center">
-                        <span class="w-2 h-2 bg-slate-400 rounded-full mr-3"></span>
-                        Auf Reddit finden sich oft persönliche Einblicke. Einfach mal "reddit" in der Suche erwähnen.
-                    </li>
-                    <li class="flex items-center">
-                        <span class="w-2 h-2 bg-slate-400 rounded-full mr-3"></span>
-                        <a href="https://www.youtube.com/playlist?list=PLHbwXC4hOaBseaikqnaCyTvpx-KsOKqDk" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline">Wer verdient was? BR</a> <span class="text-sm text-slate-500 ml-2">(Playlist)</span>
-                    </li>
-                    <li class="flex items-center">
-                        <span class="w-2 h-2 bg-slate-400 rounded-full mr-3"></span>
-                        <a href="https://www.youtube.com/playlist?list=PLFqa6VS0S3Tp78SSlEIqR0ZJqPlbzUmiz" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline">Studiengänge</a> <span class="text-sm text-slate-500 ml-2">(Playlist, nur überflogen)</span>
-                    </li>
-                    <li class="flex items-center">
-                        <span class="w-2 h-2 bg-slate-400 rounded-full mr-3"></span>
-                        <a href="https://www.youtube.com/playlist?list=PLnQD8S3ip13z2hXX3dWMAiFfGSxy2fAiA" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline">Berufe</a> <span class="text-sm text-slate-500 ml-2">(Playlist, nur überflogen)</span>
-                    </li>
-                    <li class="flex items-center">
-                        <span class="w-2 h-2 bg-slate-400 rounded-full mr-3"></span>
-                        <a href="https://www.youtube.com/playlist?list=PL7o7XqfqRuj_ytJ4oEo3zJnH5B7PVo-VU" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline">Degree Tierlist</a> <span class="text-sm text-slate-500 ml-2">(Playlist, nur überflogen)</span>
-                    </li>
-                    <li class="flex items-center">
-                        <span class="w-2 h-2 bg-slate-400 rounded-full mr-3"></span>
-                        <a href="https://www.youtube.com/playlist?list=PLAqyHMcCVnVso3RM4OjTMRJWI9a-ishpK" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline">Domain of Science Maps</a><span class="text-sm text-slate-500 ml-2">(Playlist)</span>
-                    </li>
-                    <li class="flex items-center">
-                        <span class="w-2 h-2 bg-slate-400 rounded-full mr-3"></span>
-                        <a href="https://en.wikipedia.org/wiki/Bloom%27s_taxonomy#/media/File:Bloom's_revised_taxonomy.svg" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline">Blooms Hierarchy of Learning Levels</a> <span class="text-sm text-slate-500 ml-2">(Pyramide)</span>
-                    </li>
-                </ul>
+            <div class="bg-white p-5 rounded-xl shadow-sm border border-slate-200">
+              <div class="text-sm font-bold text-slate-500 mb-2">
+                ultra_nick
+              </div>
+              <div class="text-slate-800">
+                if you actually want to use some knowledge in the future, then studying will help. Memorizing facts alone isn't studying. Facts are useless unless you understand how they connect to the world. Having knowledge of the world in your head enables you to use your knowledge to recognize opportunities or threats that you'd miss if you can only look stuff up.
+              </div>
             </div>
-        </section>
-
-        <!-- SECTION 4: Fachbereiche in Berlin -->
-        <section id="weitere-infos" class="mb-12">
-            <div class="flex flex-col md:flex-row md:items-baseline justify-between mb-4 pb-2 border-b-2 border-slate-200 gap-2">
-                <h1 class="text-3xl font-bold text-slate-900">
-                    Fachbereiche in Berlin
-                </h1>
-                <a href="#inhaltsverzeichnis" class="text-sm font-medium text-slate-500 hover:text-blue-600 hover:underline shrink-0 transition-colors">
-                    &uarr; Zum Inhaltsverzeichnis
-                </a>
+          </div>
+        </div>
+        <div class="mb-10">
+          <h2 class="text-2xl font-semibold text-slate-800 mb-6 flex flex-wrap items-center gap-y-2">
+            <span class="bg-blue-100 text-blue-700 px-3 py-1 rounded-md text-sm font-bold mr-3">
+              Forum
+            </span>
+            Meinungen aus 
+            <a href="https://www.reddit.com/r/AskOldPeople/comments/11f7iia/is_it_really_important_to_study_a_lot_why/" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline ml-2">
+              r/AskOldPeople
+            </a>
+          </h2>
+          <div class="space-y-4">
+            <div class="bg-white p-5 rounded-xl shadow-sm border border-slate-200">
+              <div class="text-sm font-bold text-slate-500 mb-2">
+                Mentalfloss1
+              </div>
+              <div class="text-slate-800">
+                It’s important to learn how to learn. To learn how you learn, how YOU are best able to learn.
+              </div>
             </div>
-            <p class="text-slate-700 mb-6">Weil ich an der TU studiere sind die meisten Infos zu dieser Uni.</p>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div class="bg-white p-5 rounded-xl shadow-sm border border-slate-200">
-                    <h3 class="font-bold text-lg text-slate-800 mb-3">TU Berlin</h3>
-                    <ul class="space-y-2">
-                        <li><a href="https://www.tu.berlin/ueber-die-tu-berlin/organisation/fakultaeten-zentralinstitute/" target="_blank" class="text-blue-600 hover:underline">Alle Fakultäten</a></li>
-                        <li><a href="https://moseskonto.tu-berlin.de/moses/modultransfersystem/studiengaenge/suchen.html" target="_blank" class="text-blue-600 hover:underline">Alle Studiengänge mit Modulkatalog</a>
-                        </li>
-                        <li><a href="https://moseskonto.tu-berlin.de/moses/modultransfersystem/bolognamodule/suchen.html" target="_blank" class="text-blue-600 hover:underline">Alle Module</a></li>
-                    </ul>
-                </div>
-                <div class="bg-white p-5 rounded-xl shadow-sm border border-slate-200">
-                    <h3 class="font-bold text-lg text-slate-800 mb-3">Weitere Berliner Unis</h3>
-                    <ul class="space-y-2">
-                        <li><a href="https://www.fu-berlin.de/einrichtungen/fachbereiche/fb/index.html" target="_blank" class="text-blue-600 hover:underline">FU, Fachbereiche</a></li>
-                        <li><a href="https://www.hu-berlin.de/universitaet/organisation/alle-einrichtungen/fakultaeten-institute" target="_blank" class="text-blue-600 hover:underline">HU, Fachbereiche</a></li>
-                        <li><a href="https://en.wikipedia.org/wiki/Universities_and_research_institutions_in_Berlin#Universities" target="_blank" class="text-blue-600 hover:underline">Weitere Berliner Unis</a></li>
-                    </ul>
-                </div>
+            <div class="bg-white p-5 rounded-xl shadow-sm border border-slate-200">
+              <div class="text-sm font-bold text-slate-500 mb-2">
+                who-hash
+              </div>
+              <div class="text-slate-800">
+                I feel like the people around me (whether younger or older) that have stagnated in life are the ones that have remained closed to new ideas and stopped learning.
+              </div>
             </div>
-        </section>
-
-        <!-- SECTION 5: Wohnen in Berlin -->
-        <section class="mb-12">
-            <div class="flex flex-col md:flex-row md:items-baseline justify-between mb-6 pb-2 border-b-2 border-slate-200 gap-2">
-                <h1 class="text-3xl font-bold text-slate-900">
-                    Wohnen in Berlin
-                </h1>
-                <a href="#inhaltsverzeichnis" class="text-sm font-medium text-slate-500 hover:text-blue-600 hover:underline shrink-0 transition-colors">
-                    &uarr; Zum Inhaltsverzeichnis
-                </a>
+            <div class="bg-white p-5 rounded-xl shadow-sm border border-slate-200">
+              <div class="text-sm font-bold text-slate-500 mb-2">
+                Arkelas
+              </div>
+              <div class="text-slate-800">
+                I believe you should never stop learning, but there's no reason that learning needs to happen in a university. If university is the best path for your career, great!
+              </div>
             </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div class="bg-white p-5 rounded-xl shadow-sm border border-slate-200">
-                    <h3 class="font-bold text-lg text-slate-800 mb-3">Studierendenwerk</h3>
-                    <ul class="space-y-2">
-                        <li><a href="https://www.stw.berlin/wohnen/wohnheime/" target="_blank" class="text-blue-600 hover:underline">Wohnheime</a></li>
-                        <li><a href="https://tl1.eu/SWB/#admission" target="_blank" class="text-blue-600 hover:underline">Portal</a></li>
-                    </ul>
-                </div>
-                <div class="bg-white p-5 rounded-xl shadow-sm border border-slate-200">
-                    <h3 class="font-bold text-lg text-slate-800 mb-1">Studentendörfer</h3>
-                    <p class="text-sm text-slate-500 mb-3">(teurer, weniger zentral)</p>
-                    <ul class="space-y-2">
-                        <li><a href="https://www.studentendorf.berlin/" target="_blank" class="text-blue-600 hover:underline">Schlachtensee</a></li>
-                        <li><a href="https://www.studentendorf.berlin/de/wohnen/adlershof/" target="_blank" class="text-blue-600 hover:underline">Adlershof</a></li>
-                    </ul>
-                </div>
+            <div class="bg-white p-5 rounded-xl shadow-sm border border-slate-200">
+              <div class="text-sm font-bold text-slate-500 mb-2">
+                catdude142
+              </div>
+              <div class="text-slate-800">
+                I really didn't "study" until I reached college. Then I was there because I wanted to be there and I did well.
+              </div>
             </div>
-        </section>
-
-        <!-- SECTION 6: Sonstiges -->
-        <section class="mb-12">
-            <div class="flex flex-col md:flex-row md:items-baseline justify-between mb-6 pb-2 border-b-2 border-slate-200 gap-2">
-                <h1 class="text-3xl font-bold text-slate-900">
-                    Sonstiges
-                </h1>
-                <a href="#inhaltsverzeichnis" class="text-sm font-medium text-slate-500 hover:text-blue-600 hover:underline shrink-0 transition-colors">
-                    &uarr; Zum Inhaltsverzeichnis
-                </a>
+            <div class="bg-white p-5 rounded-xl shadow-sm border border-slate-200">
+              <div class="text-sm font-bold text-slate-500 mb-2">
+                Mark12547
+              </div>
+              <div class="text-slate-800 space-y-3">
+                <p>
+                Having achieved a certain level of education or a certain credential shows the employer that you are willing to stick with and complete a long-term task, even when that task can involve drudgery.
+                </p>
+                <p>
+                As mentioned by someone else, a valuable skill is knowing how to find information, particularly technical information relevant to the job or a particular situation one may need to research. Also, many jobs require some sort of continuing education
+                </p>
+                <p>
+                Education increases the options. While it won't guarantee the dream job, it can increase the chance of qualifying for a career that you end up enjoying and doing for the long term.
+                </p>
+              </div>
+            </div>
+            <div class="bg-white p-5 rounded-xl shadow-sm border border-slate-200">
+              <div class="text-sm font-bold text-slate-500 mb-2">
+                Gytramr65
+              </div>
+              <div class="text-slate-800">
+                My take - studying “a lot” may or may not be effective. One of the things I’ve learned, more often than not, painfully, is that there are various different ways people learn. And often, the educational systems, and/or individual instructors, tend to fashion teaching to the (perceived) majority.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="studium-bewaeltigen" class="mb-16">
+        <div class="flex flex-col md:flex-row md:items-baseline justify-between mb-6 pb-4 border-b-2 border-slate-200 gap-2">
+          <h1 class="text-3xl md:text-4xl font-bold text-slate-900">
+            Wie kann man das Studium bewältigen? (Meinungen)
+          </h1>
+          <a href="#inhaltsverzeichnis" class="text-sm font-medium text-slate-500 hover:text-blue-600 hover:underline shrink-0 transition-colors">
+            &uarr; Zum Inhaltsverzeichnis
+          </a>
+        </div>
+        <p class="text-slate-700 leading-relaxed mb-2 text-lg">
+        Gerade im ersten Semester kann die Menge an Informationen überwältigend sein.
+        Aber gerade weil ich mich diesen Massen ausgeliefert habe, habe ich gelernt diese zu Filtern.
+        Wurde die Menge an Informationen zu groß, dann habe ich alle Informationen auf einer Mindmap organisiert und in Beziehung gesetzt.
+        Unterstützt hat mich meine Motivation.
+        Bei herausfordernden Themen frage ich mich:
+        Welcher Grund hält mich ab, diese Thema einfach zu ignorieren?
+        Und mir ist noch nie kein Grund eingefallen.
+        </p>
+        <p class="text-slate-700 leading-relaxed mb-2 text-lg">
+        War das schon immer Dein Ding, bei der kleinsten Schwierigkeit sofort aufzugeben, oder hat dich etwas verändert?
+        Ein gutes Ziel ist schwer zu erreichen.
+        Ob es erreicht wurde, sollte auch leicht überprüfbar sein.
+        Welche Dinge sind für Dich notwendig, um ein langfristiges Ziel in deinen Alltag zu integrieren?
+        Du scheinst mir nicht die Person zu sein, welche nie ein langfristiges Ziel verfolgen könnte.
+        </p>
+        <p class="text-slate-700 leading-relaxed mb-8 text-lg">
+        Mit Gedankenketten können 
+        <i>
+          Beziehungen
+        </i>
+        präzise ausgedrückt werden.
+        Reflektieren kommt aus dem Lateinischen und bedeutet soviel wie: aktives Suchen nach Fehlern in der Gedankenkette.
+        Je mehr Fehler jemand finden kann, desto mehr Fehler wird diese Person finden, desto besser kann diese Person Fehler finden, dass schließt den Feedbackloop.
+        Bessere analytische Fähigkeiten machen es nicht schwerer, sondern leichter diese und andere Fähigkeit zu verbessern.
+        Deswegen sind analytische Fähigkeiten wichtig, um Fehler in Gedankenketten von einem selber und aber auch von anderen erkennen zu können.
+        Somit sind analytische Fähigkeiten auch für das kreieren von eigenen Gedankenketten nicht wegdenkbar, z.B. ChatGPT, YouTube Essays, Debatten, Verhandlungen oder Diskusionen.
+        Das kommt Dir alles sicher bekannt vor, denn Dir war das sicher schon seit einiger Zeit klar.
+        </p>
+        <div class="mb-10">
+          <h2 class="text-2xl font-semibold text-slate-800 mb-6 flex flex-wrap items-center gap-y-2">
+            <span class="bg-red-100 text-red-700 px-3 py-1 rounded-md text-sm font-bold mr-3">
+              Video
+            </span>
+            YouTube Videos
+          </h2>
+          <div class="space-y-6">
+            <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200">
+              <a href="https://www.youtube.com/watch?v=kuSr6yTMuC8" target="_blank" class="text-lg font-bold text-blue-600 hover:text-blue-800 hover:underline block mb-4">
+                3 Steps to Memorize Everything. FAST.
+              </a>
+              <div class="text-slate-800 space-y-3">
+                <p>
+                The brain is not built for modern education. It is built for survival.
+                </p>
+                <p class="text-sm text-slate-500 italic">
+                (Bei interesse empfehle ich das Poster über die 5. unterschiedlichen Denkarten von uns Menschen.)
+                </p>
+              </div>
             </div>
             <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200">
-                <h3 class="font-bold text-lg text-slate-800 mb-4">Statistiken der Agentur für Arbeit</h3>
-                <ul class="space-y-3">
-                    <li class="flex items-start">
-                        <span class="mt-1.5 mr-2 w-1.5 h-1.5 bg-blue-400 rounded-full flex-shrink-0"></span>
-                        <a href="https://statistik.arbeitsagentur.de/DE/Navigation/Grundlagen/Klassifikationen/Klassifikation-der-Berufe/KldB2010-Fassung2020/Onlineausgabe-KldB-2010-Fassung2020/Onlineausgabe-KldB-2010-Fassung2020-Nav.html" target="_blank" class="text-blue-600 hover:underline break-words">Alle Berufe</a>
-                    </li>
-                    <li class="flex items-start">
-                        <span class="mt-1.5 mr-2 w-1.5 h-1.5 bg-blue-400 rounded-full flex-shrink-0"></span>
-                        <a href="https://web.arbeitsagentur.de/berufenet/" target="_blank" class="text-blue-600 hover:underline break-words">Berufsbeschreibungen</a>
-                    </li>
-                    <li class="flex items-start">
-                        <span class="mt-1.5 mr-2 w-1.5 h-1.5 bg-blue-400 rounded-full flex-shrink-0"></span>
-                        <a href="https://statistik.arbeitsagentur.de/DE/Navigation/Statistiken/Interaktive-Statistiken/Berufe-auf-einen-Blick/Berufe-auf-einen-Blick-Anwendung-Nav.html?Thema%3Dbeschaeftigung%26DR_Bereich%3Dinsg%26DR_Region%3Dd%26DR_Berufe%3Dges" target="_blank" class="text-blue-600 hover:underline break-words">Berufe nach Geschlecht/Alter/Arbeitszeits/Anforderung/Gehalt</a>
-                    </li>
-                </ul>
+              <a href="https://youtu.be/fXyRprdoEoE?si=XHnLeMlMgYjU1SBQ&t=65" target="_blank" class="text-lg font-bold text-blue-600 hover:text-blue-800 hover:underline block mb-4">
+                How to Build Systems to Actually Achieve Your Goals
+              </a>
+              <div class="text-slate-800">
+                The point of thinking in systems is you reduce your reliance on thinking terms of willpower and motivation.
+              </div>
             </div>
-        </section>
-
+          </div>
+        </div>
+        <div class="mb-10">
+          <h2 class="text-2xl font-semibold text-slate-800 mb-6 flex flex-wrap items-center gap-y-2">
+            <span class="bg-blue-100 text-blue-700 px-3 py-1 rounded-md text-sm font-bold mr-3">
+              Forum
+            </span>
+            Meinungen aus 
+            <a href="https://www.reddit.com/r/college/comments/15ftqee/what_is_the_secret_to_doing_well_in_college_both/" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline ml-2">
+              r/college
+            </a>
+          </h2>
+          <div class="space-y-4">
+            <div class="bg-white p-5 rounded-xl shadow-sm border border-slate-200">
+              <div class="text-sm font-bold text-slate-500 mb-2">
+                StickerPK
+              </div>
+              <div class="text-slate-800">
+                As for social life, the first few weeks/first month will be the most important time. Everyone is a clean slate and no one knows each other. Talk to and meet as many people as you can.
+              </div>
+            </div>
+            <div class="bg-white p-5 rounded-xl shadow-sm border border-slate-200">
+              <div class="text-sm font-bold text-slate-500 mb-2">
+                TokoBlaster
+              </div>
+              <div class="text-slate-800 space-y-3">
+                <p>
+                Staying up all night doesn't work. Get 8 hours of sleep.
+                </p>
+                <p>
+                Don't re-read your notes: re-write your notes. Use flashcards for important concepts you need to memorize, but also try to memorize as little as possible. I'm in STEM so instead of memorize every single formula I just learn the concepts and then learn how to derive the formula I need. When I did more GE things I still didn't memorize specifics but concepts, so if I had to do something like argue in Philosophy I was arguing with the concepts not with some specific quote in a book. It was easier to find the quote if I knew what they were arguing.
+                </p>
+                <p>
+                Use the resources you have at school. Go to your professors office hours, but go with a question or two. They don't have to be good, but make sure you have something specific to ask. That way it opens up conversation about the material you can pick up. Go to the library, but don't just go to the library and sit there and do homework: check out books from the library. Find other textbooks on the material you're learning and read those. Sometimes the answers to your questions are in other books.
+                </p>
+                <p>
+                Get into study groups: this will help you socially and make friends, but also studying with people helps you learn the material by either teaching it to others or hearing their perceptive on the material.
+                </p>
+                <p>
+                And finally: try to enjoy the material you're learning. Enjoying it makes it easier to learn, while if you're like "Oh god... I have to take a physics class" means you're going to hate the material and refuse to learn it, but if you at least try to enjoy it, or find something you enjoy about it, it will make it easier to study.
+                </p>
+              </div>
+            </div>
+            <div class="bg-white p-5 rounded-xl shadow-sm border border-slate-200">
+              <div class="text-sm font-bold text-slate-500 mb-2">
+                Primary_Excuse_7183
+              </div>
+              <div class="text-slate-800">
+                If the only place you’re learning is in the classroom you’re likely doing college wrong.
+              </div>
+            </div>
+            <div class="bg-white p-5 rounded-xl shadow-sm border border-slate-200">
+              <div class="text-sm font-bold text-slate-500 mb-2">
+                Creepy-Tangerine-293
+              </div>
+              <div class="text-slate-800 space-y-3">
+                <p>
+                Read. The. Syllabus. And don't email prof ever if you haven't checked to make sure your answer isn't in the syllabus already. They can get very frosty if you appear that you aren't truly engaged in the info you've already been given.
+                </p>
+                <p>
+                Make use of prof office hours early in the term. They are one of the most underutilized resources on any campus.
+                </p>
+              </div>
+            </div>
+            <div class="bg-white p-5 rounded-xl shadow-sm border border-slate-200">
+              <div class="text-sm font-bold text-slate-500 mb-2">
+                deleted
+              </div>
+              <div class="text-slate-800">
+                Make an excel sheet to keep track of all assignments.
+              </div>
+            </div>
+            <div class="bg-white p-5 rounded-xl shadow-sm border border-slate-200">
+              <div class="text-sm font-bold text-slate-500 mb-2">
+                mattynmax
+              </div>
+              <div class="text-slate-800 space-y-3">
+                <p>
+                It’s an extremely difficult and complex task but I’ll explain it as simply as I can
+                </p>
+                <p>
+                Manage your time.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mb-10 bg-indigo-50 p-6 rounded-xl border border-indigo-100">
+          <h2 class="text-xl font-semibold text-indigo-900 mb-4 flex flex-wrap items-center gap-y-2">
+            Communities
+          </h2>
+          <ul class="space-y-3 text-slate-700">
+            <li class="flex items-center">
+              <span class="w-2 h-2 bg-indigo-400 rounded-full mr-3">
+              </span>
+              Uni- oder Studiengang-Foren (z.B. Discord, Reddit)
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section id="studiengang-waehlen" class="mb-16">
+        <div class="flex flex-col md:flex-row md:items-baseline justify-between mb-8 pb-4 border-b-2 border-slate-200 gap-2">
+          <h1 class="text-3xl md:text-4xl font-bold text-slate-900">
+            Wie wählt man den Studiengang?
+          </h1>
+          <a href="#inhaltsverzeichnis" class="text-sm font-medium text-slate-500 hover:text-blue-600 hover:underline shrink-0 transition-colors">
+            &uarr; Zum Inhaltsverzeichnis
+          </a>
+        </div>
+        <div class="mb-10">
+          <h2 class="text-2xl font-semibold text-slate-800 mb-6 flex flex-wrap items-center gap-y-2">
+            <span class="bg-blue-100 text-blue-700 px-3 py-1 rounded-md text-sm font-bold mr-3">
+              Forum
+            </span>
+            Meinungen aus 
+            <a href="https://www.reddit.com/r/college/comments/1cdrzoh/how_did_you_decide_on_your_college_major_and/" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline ml-2">
+              r/college
+            </a>
+          </h2>
+          <div class="space-y-4">
+            <div class="bg-white p-5 rounded-xl shadow-sm border border-slate-200">
+              <div class="text-sm font-bold text-slate-500 mb-2">
+                Wxpid
+              </div>
+              <div class="text-slate-800">
+                Focus on taking a good step that gives you options in the future. You don't have to decide what to be for the rest of your life. [...] If you love it, get the bachelors degree. If you don't, switch. If you're tired of school, you picked an employable degree that guarantees you a living wage for minimal cost.
+              </div>
+            </div>
+            <div class="bg-white p-5 rounded-xl shadow-sm border border-slate-200">
+              <div class="text-sm font-bold text-slate-500 mb-2">
+                Not-the-swedish-chef
+              </div>
+              <div class="text-slate-800">
+                I changed my major three times. I eventually landed on accounting. This is going to sound shallow, but I honestly just want to have a job where I make good money, is stable, and so I can have a nice quality of life and fund my hobbies.
+              </div>
+            </div>
+            <div class="bg-white p-5 rounded-xl shadow-sm border border-slate-200">
+              <div class="text-sm font-bold text-slate-500 mb-2">
+                TheLazerChamp
+              </div>
+              <div class="text-slate-800">
+                I picked what I loved. I love math and love teaching things to others, so I will be a math teacher. Simple as that, sure I won’t hit it rich or anything but at the end of the day I only have 80-90 years on this planet, other people can spend it min maxing I’ll just enjoy it.
+              </div>
+            </div>
+            <div class="bg-white p-5 rounded-xl shadow-sm border border-slate-200">
+              <div class="text-sm font-bold text-slate-500 mb-2">
+                BBack09
+              </div>
+              <div class="text-slate-800">
+                I did not want to work in a cubicle and was drawn to a career I could use my problem solving skills with. I also get a kick out of seeing people do well.
+              </div>
+            </div>
+            <div class="bg-white p-5 rounded-xl shadow-sm border border-slate-200">
+              <div class="text-sm font-bold text-slate-500 mb-2">
+                Staticc_
+              </div>
+              <div class="text-slate-800">
+                If you don’t know what you want to do yet, I’d suggest getting core credits from a community college while you’re figuring it out. [...] A lot of majors have requirements that coincide with each other (ex swapped from computer science to math, requires many of the same math courses). [...] If you’re not interested in the material, it’ll make the classes that much worse. Maybe get some experience in fields you’d be interested in or talking to people in those fields. It’s a big choice, but not the end of the world if you change your mind.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mb-10">
+          <h2 class="text-2xl font-semibold text-slate-800 mb-6 flex flex-wrap items-center gap-y-2">
+            <span class="bg-blue-100 text-blue-700 px-3 py-1 rounded-md text-sm font-bold mr-3">
+              Forum
+            </span>
+            Meinungen aus 
+            <a href="https://www.reddit.com/r/education/comments/1is59vt/what_is_the_best_approach_to_choosing_a_college/" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline ml-2">
+              r/education
+            </a>
+          </h2>
+          <div class="space-y-4">
+            <div class="bg-white p-5 rounded-xl shadow-sm border border-slate-200">
+              <div class="text-sm font-bold text-slate-500 mb-2">
+                stacy2545
+              </div>
+              <div class="text-slate-800">
+                Idk if it was the "best" way, but I picked major by going through my uni's course catalog & circling every class I was interested in taking.
+              </div>
+            </div>
+            <div class="bg-white p-5 rounded-xl shadow-sm border border-slate-200">
+              <div class="text-sm font-bold text-slate-500 mb-2">
+                katbeccabee
+              </div>
+              <div class="text-slate-800 space-y-3">
+                <p>
+                I chose a major 18 years ago, and I still see it as a bit of an impossible task. High school and college students haven’t had much opportunity to get a sense of what jobs are out there. College majors don’t necessarily correspond well to career opportunities. Your path is going to be influenced by relationships, geography, timing, and chance in ways that you just can’t predict now.
+                </p>
+                <p>
+                At every opportunity, ask adults about what they do for work, how they got interested in it, and the sequence of steps that got them to where they are. Even if it’s something that doesn’t interest you at all, you’ll get an idea of how people’s career paths take shape. People meander more than you might think. You’ll also get ideas of opportunities that might be available within your particular environment.
+                </p>
+                <p>
+                Notice which classes you like the best, but also think about why you like them. What kinds of tasks do you find interesting or tedious, easy or difficult?
+                </p>
+                <p>
+                When all else fails, just pick something (for now). Stick with it long enough to get some depth of knowledge in the subject. See what opportunities it opens up for you, and if you see an opportunity to shift towards something you like better, take it.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mb-10">
+          <h2 class="text-2xl font-semibold text-slate-800 mb-6 flex flex-wrap items-center gap-y-2">
+            <span class="bg-blue-100 text-blue-700 px-3 py-1 rounded-md text-sm font-bold mr-3">
+              Other
+            </span>
+            Weitere Meinungen
+          </h2>
+          <div class="space-y-4">
+            <div class="bg-white p-5 rounded-xl shadow-sm border border-slate-200">
+              <div class="text-sm font-bold text-slate-500 mb-2">
+                bruno
+              </div>
+              <div class="text-slate-800">
+                The ideal study subject is one you would like to apply and learn about on your own, and which offers the opportunities you want.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mb-10 bg-slate-100 p-6 rounded-xl border border-slate-200">
+          <h2 class="text-xl font-semibold text-slate-800 mb-4 flex flex-wrap items-center gap-y-2">
+            <span class="bg-emerald-100 text-emerald-700 px-3 py-1 rounded-md text-sm font-bold mr-3">
+              Links
+            </span>
+            Hilfreiche Ressourcen
+          </h2>
+          <ul class="space-y-3 text-slate-700">
+            <li class="flex items-start">
+              <span class="w-2 h-2 bg-slate-400 rounded-full shrink-0 mr-3 mt-2">
+              </span>
+              <div class="flex flex-col sm:flex-row sm:items-baseline gap-y-0.5 sm:gap-x-2">
+                <a href="https://www.static.tu.berlin/fileadmin/www/_processed_/c/3/csm_SVP_BSC_ET_WS23_24_gross_29d5a49a97.png" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline">
+                  Beispiel Studienverlaufsplan
+                </a>
+                <span class="text-sm text-slate-500">
+                  (Bild, hilfreich, via Google)
+                </span>
+              </div>
+            </li>
+            <li class="flex items-start">
+              <span class="w-2 h-2 bg-slate-400 rounded-full shrink-0 mr-3 mt-2">
+              </span>
+              <span>
+                Auf Reddit finden sich oft persönliche Einblicke. Einfach mal "reddit" in der Suche erwähnen.
+              </span>
+            </li>
+            <li class="flex items-start">
+              <span class="w-2 h-2 bg-slate-400 rounded-full shrink-0 mr-3 mt-2">
+              </span>
+              <div class="flex flex-col sm:flex-row sm:items-baseline gap-y-0.5 sm:gap-x-2">
+                <a href="https://www.youtube.com/playlist?list=PLHbwXC4hOaBseaikqnaCyTvpx-KsOKqDk" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline">
+                  Wer verdient was? BR
+                </a>
+                <span class="text-sm text-slate-500">
+                  (Playlist, entertaining)
+                </span>
+              </div>
+            </li>
+            <li class="flex items-start">
+              <span class="w-2 h-2 bg-slate-400 rounded-full shrink-0 mr-3 mt-2">
+              </span>
+              <div class="flex flex-col sm:flex-row sm:items-baseline gap-y-0.5 sm:gap-x-2">
+                <a href="https://www.youtube.com/playlist?list=PLAqyHMcCVnVso3RM4OjTMRJWI9a-ishpK" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline">
+                  Domain of Science Maps
+                </a>
+                <span class="text-sm text-slate-500">
+                  (Playlist)
+                </span>
+              </div>
+            </li>
+            <li class="flex items-start">
+              <span class="w-2 h-2 bg-slate-400 rounded-full shrink-0 mr-3 mt-2">
+              </span>
+              <div class="flex flex-col sm:flex-row sm:items-baseline gap-y-0.5 sm:gap-x-2">
+                <a href="https://en.wikipedia.org/wiki/Bloom%27s_taxonomy#/media/File:Bloom's_revised_taxonomy.svg" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline">
+                  Blooms Hierarchy of Learning Levels
+                </a>
+                <span class="text-sm text-slate-500">
+                  (Bild)
+                </span>
+              </div>
+            </li>
+            <li class="flex items-start">
+              <span class="w-2 h-2 bg-slate-400 rounded-full shrink-0 mr-3 mt-2">
+              </span>
+              <div class="flex flex-col sm:flex-row sm:items-baseline gap-y-0.5 sm:gap-x-2">
+                <a href="https://www.youtube.com/playlist?list=PLFqa6VS0S3Tp78SSlEIqR0ZJqPlbzUmiz" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline">
+                  Studiengänge
+                </a>
+                <span class="text-sm text-slate-500">
+                  (Playlist, nur überflogen)
+                </span>
+              </div>
+            </li>
+            <li class="flex items-start">
+              <span class="w-2 h-2 bg-slate-400 rounded-full shrink-0 mr-3 mt-2">
+              </span>
+              <div class="flex flex-col sm:flex-row sm:items-baseline gap-y-0.5 sm:gap-x-2">
+                <a href="https://www.youtube.com/playlist?list=PL7o7XqfqRuj_ytJ4oEo3zJnH5B7PVo-VU" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline">
+                  Degree Tierlist
+                </a>
+                <span class="text-sm text-slate-500">
+                  (Playlist, nur überflogen)
+                </span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section id="weitere-infos" class="mb-12">
+        <div class="flex flex-col md:flex-row md:items-baseline justify-between mb-4 pb-2 border-b-2 border-slate-200 gap-2">
+          <h1 class="text-3xl font-bold text-slate-900">
+            Fachbereiche in Berlin
+          </h1>
+          <a href="#inhaltsverzeichnis" class="text-sm font-medium text-slate-500 hover:text-blue-600 hover:underline shrink-0 transition-colors">
+            &uarr; Zum Inhaltsverzeichnis
+          </a>
+        </div>
+        <p class="text-slate-700 mb-6">
+        Weil ich an der TU studiere sind die meisten Infos zu dieser Uni.
+        </p>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div class="bg-white p-5 rounded-xl shadow-sm border border-slate-200">
+            <h3 class="font-bold text-lg text-slate-800 mb-3">
+              TU Berlin
+            </h3>
+            <ul class="space-y-2">
+              <li>
+                <a href="https://www.tu-berlin.de/ueber-die-tu-berlin/organisation/fakultaeten-zentralinstitute/" target="_blank" class="text-blue-600 hover:underline">
+                  Alle Fakultäten
+                </a>
+              </li>
+              <li>
+                <a href="https://moseskonto.tu-berlin.de/moses/modultransfersystem/studiengaenge/suchen.html" target="_blank" class="text-blue-600 hover:underline">
+                  Alle Studiengänge mit Modulkatalog
+                </a>
+              </li>
+              <li>
+                <a href="https://moseskonto.tu-berlin.de/moses/modultransfersystem/bolognamodule/suchen.html" target="_blank" class="text-blue-600 hover:underline">
+                  Alle Module
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="bg-white p-5 rounded-xl shadow-sm border border-slate-200">
+            <h3 class="font-bold text-lg text-slate-800 mb-3">
+              Weitere Berliner Unis
+            </h3>
+            <ul class="space-y-2">
+              <li>
+                <a href="https://www.fu-berlin.de/einrichtungen/fachbereiche/fb/index.html" target="_blank" class="text-blue-600 hover:underline">
+                  FU, Fachbereiche
+                </a>
+              </li>
+              <li>
+                <a href="https://www.hu-berlin.de/universitaet/organisation/alle-einrichtungen/fakultaeten-institute" target="_blank" class="text-blue-600 hover:underline">
+                  HU, Fachbereiche
+                </a>
+              </li>
+              <li>
+                <a href="https://en.wikipedia.org/wiki/Universities_and_research_institutions_in_Berlin#Universities" target="_blank" class="text-blue-600 hover:underline">
+                  Weitere Berliner Unis
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="mb-12">
+        <div class="flex flex-col md:flex-row md:items-baseline justify-between mb-6 pb-2 border-b-2 border-slate-200 gap-2">
+          <h1 class="text-3xl font-bold text-slate-900">
+            Wohnen in Berlin
+          </h1>
+          <a href="#inhaltsverzeichnis" class="text-sm font-medium text-slate-500 hover:text-blue-600 hover:underline shrink-0 transition-colors">
+            &uarr; Zum Inhaltsverzeichnis
+          </a>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div class="bg-white p-5 rounded-xl shadow-sm border border-slate-200">
+            <h3 class="font-bold text-lg text-slate-800 mb-3">
+              Studierendenwerk
+            </h3>
+            <ul class="space-y-2">
+              <li>
+                <a href="https://www.stw.berlin/wohnen/wohnheime/" target="_blank" class="text-blue-600 hover:underline">
+                  Wohnheime
+                </a>
+              </li>
+              <li>
+                <a href="https://tl1.eu/SWB/#admission" target="_blank" class="text-blue-600 hover:underline">
+                  Portal
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="bg-white p-5 rounded-xl shadow-sm border border-slate-200">
+            <h3 class="font-bold text-lg text-slate-800 mb-1">
+              Studentendörfer
+            </h3>
+            <p class="text-sm text-slate-500 mb-3">
+            (teurer, weniger zentral)
+            </p>
+            <ul class="space-y-2">
+              <li>
+                <a href="https://www.studentendorf.berlin/" target="_blank" class="text-blue-600 hover:underline">
+                  Schlachtensee
+                </a>
+              </li>
+              <li>
+                <a href="https://www.studentendorf.berlin/de/wohnen/adlershof/" target="_blank" class="text-blue-600 hover:underline">
+                  Adlershof
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="mb-12">
+        <div class="flex flex-col md:flex-row md:items-baseline justify-between mb-6 pb-2 border-b-2 border-slate-200 gap-2">
+          <h1 class="text-3xl font-bold text-slate-900">
+            Sonstiges
+          </h1>
+          <a href="#inhaltsverzeichnis" class="text-sm font-medium text-slate-500 hover:text-blue-600 hover:underline shrink-0 transition-colors">
+            &uarr; Zum Inhaltsverzeichnis
+          </a>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200">
+          <h3 class="font-bold text-lg text-slate-800 mb-4">
+            Statistiken der Agentur für Arbeit
+          </h3>
+          Das ist eher ein Quellenverzeichnis für mich.
+          <ul class="space-y-3">
+            <li class="flex items-start">
+              <span class="mt-1.5 mr-2 w-1.5 h-1.5 bg-blue-400 rounded-full flex-shrink-0">
+              </span>
+              <a href="https://statistik.arbeitsagentur.de/DE/Navigation/Grundlagen/Klassifikationen/Klassifikation-der-Berufe/KldB2010-Fassung2020/Onlineausgabe-KldB-2010-Fassung2020/Onlineausgabe-KldB-2010-Fassung2020-Nav.html" target="_blank" class="text-blue-600 hover:underline break-words">
+                Alle Berufe
+              </a>
+            </li>
+            <li class="flex items-start">
+              <span class="mt-1.5 mr-2 w-1.5 h-1.5 bg-blue-400 rounded-full flex-shrink-0">
+              </span>
+              <a href="https://web.arbeitsagentur.de/berufenet/" target="_blank" class="text-blue-600 hover:underline break-words">
+                Berufsbeschreibungen
+              </a>
+            </li>
+            <li class="flex items-start">
+              <span class="mt-1.5 mr-2 w-1.5 h-1.5 bg-blue-400 rounded-full flex-shrink-0">
+              </span>
+              <a href="https://statistik.arbeitsagentur.de/DE/Navigation/Statistiken/Interaktive-Statistiken/Berufe-auf-einen-Blick/Berufe-auf-einen-Blick-Anwendung-Nav.html?Thema%3Dbeschaeftigung%26DR_Bereich%3Dinsg%26DR_Region%3Dd%26DR_Berufe%3Dges" target="_blank" class="text-blue-600 hover:underline break-words">
+                Berufe nach Geschlecht/Alter/Arbeitszeits/Anforderung/Gehalt
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
     </main>
-
-</body>
+  </body>
 </html>
