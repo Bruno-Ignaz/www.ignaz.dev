@@ -1,0 +1,20 @@
+<article class="group-card bg-surface-container-lowest rounded-xl shadow-card-level-1 hover:shadow-card-interactive transition-shadow duration-300 border border-outline-variant p-card-padding flex flex-col gap-6">
+  <div class="flex justify-between items-start">
+    <div class="flex flex-col gap-1">
+      <input class="group-name text-headline-md font-headline-md text-on-surface mb-1 bg-transparent border-none outline-none p-0 w-full" type="text" value="{{ groupName }}" placeholder="Pizza Type">
+      <input class="shop-name text-label-sm font-label-sm text-secondary bg-transparent border-none outline-none p-0 w-full" type="text" value="{{ shopName }}" placeholder="Shop Name">
+    </div>
+    <button class="delete-group text-on-surface-variant hover:text-error transition-colors p-2 rounded-full hover:bg-error-container aspect-square w-10 h-10 flex items-center justify-center">
+      <span class="material-symbols-outlined">delete</span>
+    </button>
+  </div>
+  <!-- Entries List -->
+  <div class="entries space-y-4">
+    <include src="entry.comp.html">{ "diameter": "{{ d1 }}", "price": "{{ p1 }}", "pricePerArea": "{{ ppa1 }}", "color": "{{ c1 }}" }</include>
+    <include src="entry.comp.html">{ "diameter": "{{ d2 }}", "price": "{{ p2 }}", "pricePerArea": "{{ ppa2 }}", "color": "{{ c2 }}" }</include>
+  </div>
+  <button class="add-size mt-auto w-full border-2 border-dashed border-outline-variant hover:border-primary text-primary font-headline-md text-body-md py-3 rounded-lg flex items-center justify-center gap-2 transition-colors h-touch-target-min">
+    <span class="material-symbols-outlined">add</span>
+    Add Size
+  </button>
+</article>

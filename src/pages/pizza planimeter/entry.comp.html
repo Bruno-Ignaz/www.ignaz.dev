@@ -1,0 +1,23 @@
+<div class="entry-row grid grid-cols-[1fr_1fr_1fr_auto] gap-4 items-center bg-surface-container p-4 rounded-lg">
+  <div class="flex flex-col gap-1">
+    <label class="text-label-sm font-label-sm text-on-surface-variant uppercase tracking-wider">Diameter</label>
+    <div class="flex items-center gap-2">
+      <input class="diameter w-full bg-surface-container-lowest border border-outline-variant rounded-md px-3 py-2 text-data-mono font-data-mono text-on-surface focus:border-primary focus:ring-1 focus:ring-primary h-touch-target-min" type="number" value="{{ diameter }}" min="1" step="1">
+      <span class="text-body-md font-body-md text-secondary">cm</span>
+    </div>
+  </div>
+  <div class="flex flex-col gap-1">
+    <label class="text-label-sm font-label-sm text-on-surface-variant uppercase tracking-wider">Price</label>
+    <div class="relative">
+      <span class="absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant">€</span>
+      <input class="price w-full bg-surface-container-lowest border border-outline-variant rounded-md pl-7 pr-3 py-2 text-data-mono font-data-mono text-on-surface focus:border-primary focus:ring-1 focus:ring-primary h-touch-target-min" type="number" value="{{ price }}" min="0" step="0.01">
+    </div>
+  </div>
+  <div class="flex flex-col gap-1 items-end justify-center">
+    <span class="text-label-sm font-label-sm text-on-surface-variant uppercase tracking-wider">Price/Area</span>
+    <div class="ppa text-headline-md font-headline-md {{ color }}">{{ pricePerArea }} <span class="text-label-sm font-label-sm text-secondary">¢/cm²</span></div>
+  </div>
+  <button class="delete-entry text-on-surface-variant hover:text-error transition-colors p-2 rounded-full hover:bg-error-container self-center aspect-square w-10 h-10 flex items-center justify-center">
+    <span class="material-symbols-outlined">delete</span>
+  </button>
+</div>
